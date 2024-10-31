@@ -133,4 +133,4 @@ Para a entrega, envie um `.zip` com o código fonte do projeto e um arquivo `txt
 
 ---
 
-Desenvolvido por [Giancarlo] e [Fabricio,Polyaniana,Rafael].
+Desenvolvido por [Giancarlo] e [Fabricio, Poliany, Rafael S.].
