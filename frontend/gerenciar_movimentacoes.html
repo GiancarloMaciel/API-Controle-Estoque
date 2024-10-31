@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Gerenciar Movimentações</title>
+</head>
+<body>
+    <header>
+        <h1><a href="./index.html">Gerenciar Movimentações de Estoque</a></h1>
+    </header>
+    <div class="container">
+        <div class="left-panel">
+            <form id="movimentacaoForm">
+                <label for="id_mercado">ID do Mercado:</label>
+                <input type="text" id="id_mercado" required>
+
+                <label for="id_produto">ID do Produto:</label>
+                <input type="text" id="id_produto" required>
+
+                <label for="tipo">Tipo de Movimentação:</label>
+                <select id="tipo" required>
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" required>
+
+                <label for="data_movimentacao">Data da Movimentação:</label>
+                <input type="date" id="data_movimentacao" required>
+
+                <button type="submit">Registrar Movimentação</button>
+                <div class="mensagem" id="mensagem"></div>
+            </form>
+
+            <h2>Movimentações Registradas</h2>
+            <table id="tabelaMovimentacoes">
+                <thead>
+                    <tr>
+                        <th>ID do Mercado</th>
+                        <th>ID do Produto</th>
+                        <th>Tipo</th>
+                        <th>Quantidade</th>
+                        <th>Data da Movimentação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="right-panel">
+            <!-- Seção de Usabilidade -->
+            <h2>Instruções de Uso</h2>
+            <p>Para registrar uma movimentação de estoque, preencha os campos do formulário com as seguintes
+                informações:</p>
+            <ul>
+                <li><strong>ID do Mercado:</strong> Insira o identificador do mercado onde a movimentação
+                    ocorrerá.</li>
+                <li><strong>ID do Produto:</strong> Insira o identificador do produto que está sendo
+                    movimentado.</li>
+                <li><strong>Tipo de Movimentação:</strong> Selecione se a movimentação é uma entrada ou saída de
+                    estoque.</li>
+                <li><strong>Quantidade:</strong> Indique a quantidade do produto a ser movimentada.</li>
+                <li><strong>Data da Movimentação:</strong> Escolha a data em que a movimentação ocorreu.</li>
+            </ul>
+            <p>Após preencher todos os campos, clique em <strong>"Registrar Movimentação"</strong> para salvar
+                as informações.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Seu Nome ou Empresa</p>
+    </footer>
+
+    <!-- Referência ao JavaScript -->
+    <script src="gerenciar_movimentacoes.js"></script>
+</body>
+</html>

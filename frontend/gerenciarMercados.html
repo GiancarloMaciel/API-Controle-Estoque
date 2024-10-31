@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Mercados</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS global -->
+</head>
+<body>
+    <header>
+        <h1><a href="./index.html">Gerenciar Mercados</a></h1>
+    </header>
+
+    <div class="container">
+        <div class="left-panel">
+            <form id="form-mercado">
+                <label for="nome">Nome do Mercado:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <button type="submit">Adicionar Mercado</button>
+            </form>
+
+            <div class="mensagem" id="mensagem"></div>
+
+            <h2>Mercados Cadastrados</h2>
+            <table id="tabela-mercados">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Endereço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="right-panel">
+            <h2>Instruções de Uso</h2>
+            <p>Para adicionar um novo mercado, preencha os campos "Nome do Mercado" e "Endereço" acima e clique em <strong>"Adicionar Mercado"</strong>. Certifique-se de que as informações estão corretas antes de enviar.</p>
+            <p>Após adicionar um mercado, ele aparecerá na tabela abaixo, onde você poderá visualizar todos os mercados cadastrados.</p>
+            <p>Na tabela de mercados, você encontrará opções para editar ou excluir um mercado existente. Ao clicar em <strong>"Editar"</strong>, você poderá modificar as informações do mercado. Para excluir um mercado, clique em <strong>"Excluir"</strong>, que removerá o mercado da lista.</p>
+            <p>Mantenha os dados organizados e atualizados para garantir uma gestão eficiente dos mercados.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sistema de Gestão de Mercados. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="gerenciarMercados.js"></script> <!-- Link para o JavaScript da página -->
+</body>
+</html>
